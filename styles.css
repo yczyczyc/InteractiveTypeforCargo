@@ -1,0 +1,66 @@
+/* Overall Page Styling */
+body {
+    margin: 0;
+    padding: 20px; /* Add margin for overall layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Palatino", serif;
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color:rgb(120, 160, 0);
+    font-size: 48px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    /* text-transform: uppercase; */
+  }
+  
+  /* Letter Grid Wrapper (Flexbox) */
+  .letter-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 10px; 
+    justify-content: center; /* Center items horizontally */
+    margin-top: 6vh; 
+    width: 100%;
+    max-width: 1400px; /* Prevent grid from being too wide */
+    box-sizing: border-box;
+  }
+  
+  /* Letter Container Styling */
+  .letter-container {
+    width: 220px; /* Fixed width */
+    height: 280px; /* Fixed height */
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+  }
+
+  /* Each letter container holds the canvas */
+.canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Container for each group of letter canvases */
+.canvas-zone {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 4px; */
+  justify-content: center;
+  align-items: center;
+}
+
